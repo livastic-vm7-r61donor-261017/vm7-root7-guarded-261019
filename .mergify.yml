@@ -1,0 +1,10 @@
+pull_request_rules:
+  - name: VM7 root7 guarded consumer 261019
+    conditions:
+      - author = livastic-vm7-r61donor-261017
+      - title = VM7_ROOT7_GUARDED_CONSUMER_261019
+      - head = vm7-root7-guarded-consumer-261019
+      - check-success = vm7-root7-guarded-prevention-261019
+    actions:
+      merge:
+        method: squash
